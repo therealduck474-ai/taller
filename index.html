@@ -2,13 +2,23 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Web Segura - CESBA</title>
-    <style>body { font-family: sans-serif; background: #0f172a; color: white; text-align: center; padding-top: 10%; margin: 0; } .container { border: 1px solid #334155; padding: 2.5rem; border-radius: 1rem; display: inline-block; background: #1e293b; max-width: 450px; }</style>
+    <title>Centro de Control - CESBA</title>
+    <style>
+        body { font-family: sans-serif; background: #0f172a; color: white; text-align: center; padding: 5% 1rem; margin:0;}
+        .container { border: 1px solid #334155; padding: 2rem; border-radius: 1rem; display: inline-block; background: #1e293b; width: 100%; max-width: 400px; }
+        form { display: flex; flex-direction: column; gap: 12px; margin-top: 1.5rem; text-align: left; }
+        input { padding: 10px; border-radius: 6px; border: 1px solid #475569; background: #0f172a; color: white; }
+        button { margin-top: 8px; padding: 12px; border: none; border-radius: 6px; background: #8b5cf6; color: white; font-weight: bold; cursor: pointer; }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1 style="color:#10b981;">¡Misión Cumplida! 🚀</h1>
-        <p>Infraestructura Edge desplegada exitosamente.</p>
+        <h1 style="color:#10b981; font-size:1.8rem; margin-top:0;">🚀 Enlace al Edge</h1>
+        <form action="https://TU-WORKER.TU-USUARIO.workers.dev" method="POST">
+            <label style="color:#94a3b8; font-size:0.85rem;">Matrícula Oficial CESBA:</label>
+            <input type="text" name="matricula" placeholder="Ej. 123456" required>
+            <button type="submit">Autenticar y Desplegar</button>
+        </form>
     </div>
 </body>
 </html>
